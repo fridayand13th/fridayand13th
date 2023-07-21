@@ -7,22 +7,34 @@ xacnhan.onclick = function(){
     var giao = document.getElementById('giao');
     var thang = document.getElementById('thang');
     var can = document.getElementById('can');
+    
     main.style.display='none';
    fmain.style.display='flex';
+  
     if(text.value=='thu'){
         thu.style.display='flex';
        
     }
-    if(text.value=='giao'){
+    else if(text.value=='giao'){
         giao.style.display='flex';
        
     }
-    if(text.value=='thang'){
+    else if(text.value=='thắng'){
         thang.style.display='flex';
      
     }
-    if(text.value=='can'){
+    else if(text.value=='cần'){
         can.style.display='flex';
        
     }
+    else{
+        main.style.display='flex';
+        fmain.style.display='none';
+        tb.style.display='flex';
+    }
 }
+var text = document.getElementById('nhap');
+    text.onclick=function(){
+        var tb= document.getElementById('tb');
+        tb.style.display='none';
+    }
